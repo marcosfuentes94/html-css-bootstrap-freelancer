@@ -16,11 +16,18 @@
    background-color: #1abc9c;
    color: white;
 }
+
 .btn-light, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
    background-color: #1abc9c;
    color: white;
    font-weight: 500;
+   margin-bottom: 20px;
 }
+.footer-top-color{
+   background-color: #3a546d;
+   color: white;
+}
+
 
 
 
