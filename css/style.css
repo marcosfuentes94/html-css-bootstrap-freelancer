@@ -30,7 +30,11 @@
    background-color: #3a546d;
    color: white;
 }
-
+hr {
+   border: 0;
+   border-top: 5px solid black;
+   width: 80px;
+ }
 
 
 

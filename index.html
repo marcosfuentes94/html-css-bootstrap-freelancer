@@ -50,15 +50,20 @@
 
 
         <!-- HEADER-BOTTOM -->
-
+          <div class="container">
             <div class="row justify-content-center align-items-center">
-              <div class="col-12 text-center">
+              <div class="col-12 text-center pb-4">
                 <img class="avatar" src="img/avatar.svg" alt="Immagine" class="">
                 <h1>START BOOTSTRAP</h1>
-                <i class="fa-solid fa-star"></i>
-                <h5>GRAPHIC ARTIST-WEB DESIGNER-ILLUSTRATOR</h5>
+                <div class="d-flex justify-content-center align-items-center mb-4">
+                  <hr class="flex-grow-1 border-light">
+                  <span class="mx-3 fs-3 text-light"><i class="fa-solid fa-star fa-xl"></i></span>
+                  <hr class="flex-grow-1 border-light">
+                </div>
+                <h6 class="fw-normal">GRAPHIC ARTIST-WEB DESIGNER-ILLUSTRATOR</h5>
               </div>
             </div>
+          </div>  
     </header>
         <!-- HEADER-BOTTOM-END -->
 
@@ -72,9 +77,14 @@
           <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="col-12 text-center mt-4 mb-4">
-                    <h2>
-                        Portfolio
+                    <h2 class="fw-bold">
+                        PORTFOLIO
                     </h2>
+                    <div class="d-flex justify-content-center align-items-center mb-4">
+                      <hr class="flex-grow-1 border-dark">
+                      <span class="mx-3 fs-3 text-dark"><i class="fa-solid fa-star fa-xl"></i></span>
+                      <hr class="flex-grow-1 border-dark">
+                    </div>
                   </div>
 
               <div class="col-md-4 col-sm-6 mb-4">
@@ -106,6 +116,11 @@
                 <div class="row">
                   <div class="col-12 text-center mt-4">
                     <h2>ABOUT</h2>
+                    <div class="d-flex justify-content-center align-items-center mb-4">
+                      <hr class="flex-grow-1 border-light">
+                      <span class="mx-3 fs-3 text-light"><i class="fa-solid fa-star fa-xl"></i></span>
+                      <hr class="flex-grow-1 border-light">
+                    </div>
                   </div>
                 </div>
                 <div class="row flex-md-row flex-md-nowrap">
@@ -129,9 +144,17 @@
         <section>
          
           <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-            <h4 class="text-center">
+            <h4 class="text-center fw-bold fs-2">
               CONTACT ME
             </h4>
+            <div class="d-flex justify-content-center align-items-center mb-4">
+              <hr class="flex-grow-1 border-dark">
+              <span class="mx-3 fs-3 text-dark"><i class="fa-solid fa-star fa-xl"></i></span>
+              <hr class="flex-grow-1 border-dark">
+            </div>
+
+            </div>
+          </div>
             <!-- Name input-->
             <div class="form-floating mb-3">
                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" data-sb-can-submit="no">
@@ -201,12 +224,21 @@
               </div>
           </div>
       </div>
-    <!-- FOOTER-TOP-END-->
+      <!-- FOOTER-TOP-END-->
 
-  </footer>
+      <!-- FOOTER-BOTTOM -->
+
+      <div class="container-fluid">
+        <div class="row mt-4 pt-3 bg-dark">
+          <div class="col-12">
+            <p class="">Copyright © Your Website 2019</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- FOOTER-BOTTOM-END -->
+     </footer>
     <!-- FINE FOOTER -->
-    
-
     
 </body>
 </html>
