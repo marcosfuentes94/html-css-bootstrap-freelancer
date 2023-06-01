@@ -23,9 +23,9 @@
 
     <header class="header-color">
         
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="container nav-bar">
-              <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <nav class="nav-bar-color navbar navbar-expand-md navbar-dark ">
+            <div class="container nav-bar nav-bar-color">
+              <a class="navbar-brand fw-bold" href="#">START BOOTSTRAP</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,13 +34,13 @@
                 <ul class="navbar-nav ms-auto">
                 <ul class="navbar-nav ms-auto link-color">
                   <li class="nav-item">
-                    <a class="nav-link link-color" href="#">Portfolio</a>
+                    <a class="nav-link link-color" href="#">PORTFOLIO</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link link-color" href="#">About</a>
+                    <a class="nav-link link-color" href="#">ABOUT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link link-color" href="#">Contact</a>
+                    <a class="nav-link link-color" href="#">CONTACT</a>
                   </li>
                 </ul>
               </div>
@@ -54,7 +54,7 @@
             <div class="row justify-content-center align-items-center">
               <div class="col-12 text-center">
                 <img class="avatar" src="img/avatar.svg" alt="Immagine" class="">
-                <h1>Start Bootstrap</h1>
+                <h1>START BOOTSTRAP</h1>
                 <i class="fa-solid fa-star"></i>
                 <h5>GRAPHIC ARTIST-WEB DESIGNER-ILLUSTRATOR</h5>
               </div>
@@ -65,7 +65,7 @@
         <!-- FINE HEADER -->
 
         <!-- MAIN -->
-    <main>
+    <main class="container-fluid">
 
         <!-- PORTFOLIO -->
         <section>
@@ -78,22 +78,22 @@
                   </div>
 
               <div class="col-md-4 col-sm-6 mb-4">
-                <img src="img/cabin.png" alt="Cabin" class="img-fluid">
+                <img src="img/cabin.png" alt="Cabin" class="img-fluid rounded-3">
               </div>
               <div class="col-md-4 col-sm-6 mb-4">
-                <img src="img/cake.png" alt="Cake" class="img-fluid">
+                <img src="img/cake.png" alt="Cake" class="img-fluid rounded-3">
               </div>
               <div class="col-md-4 col-sm-6 mb-4">
-                <img src="img/circus.png" alt="Circus" class="img-fluid">
+                <img src="img/circus.png" alt="Circus" class="img-fluid rounded-3">
               </div>
               <div class="col-md-4 col-sm-6 mb-4">
-                <img src="img/game.png" alt="Game" class="img-fluid">
+                <img src="img/game.png" alt="Game" class="img-fluid rounded-3">
               </div>
               <div class="col-md-4 col-sm-6 mb-4">
-                <img src="img/safe.png" alt="Safe" class="img-fluid">
+                <img src="img/safe.png" alt="Safe" class="img-fluid rounded-3">
               </div>
               <div class="col-md-4 col-sm-6 mb-4">
-                <img src="img/submarine.png" alt="Submarine" class="img-fluid">
+                <img src="img/submarine.png" alt="Submarine" class="img-fluid rounded-3">
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@
          <!-- PORTFOLIO END -->
 
         <!-- ABOUT -->
-         <section class="about-color">
+         <section class="about-color mb-4">
             
                 <div class="row">
                   <div class="col-12 text-center mt-4">
@@ -127,32 +127,40 @@
 
         <!-- CONTACT-ME -->
         <section>
-            <div class="container">
-                <div class="row">
-                  <div class="col-12 text-center mt-4">
-                    <h2>CONTACT ME</h2>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-12 text-left">
-                    <ul class="list-unstyled">
-                      <li>Name</li>
-                      <hr>
-                      <li>E-mail adress</li>
-                      <hr>
-                      <li>Phone number</li>
-                      <hr>
-                      <li>Message</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-12">
-                    <hr class="mt-5">
-                    <button class="btn btn-light ">Send</button>
-                  </div>
-                </div>
-              </div>
+         
+          <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <h4 class="text-center">
+              CONTACT ME
+            </h4>
+            <!-- Name input-->
+            <div class="form-floating mb-3">
+                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" data-sb-can-submit="no">
+                <label for="name">Name</label>
+            </div>
+        
+            <!-- Email address input-->
+            <div class="form-floating mb-3">
+                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="" data-sb-can-submit="">
+                <label for="email">Email address</label>
+            </div>
+        
+            <!-- Phone number input-->
+            <div class="form-floating mb-3">
+                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" data-sb-can-submit="no">
+                <label for="phone">Phone number</label>
+            </div>
+        
+            <!-- Message input-->
+            <div class="form-floating mb-3">
+                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required" data-sb-can-submit="no"></textarea>
+                <label for="message">Message</label>
+            </div>
+
+            <div>
+              <button type="button" class="btn btn-light">Send</button>
+            </div>
+        </form>
+        
 
         </section>
         <!--CONTACT-ME-END -->
@@ -162,39 +170,40 @@
 
     <!-- FOOTER -->
     <!-- FOOTER-TOP -->
-    <footer>
-       <section class="footer-top-color">
-        <div class="container text-center text-nowrap mt-5">
-            <div class="row">
-              <div class="col-12 col-md-4">
-                <h3>LOCATION</h3>
-                <address>
-                  2515 John Daniel Drive Clark,<br>
-                  MO 54243<br>
-                </address>
+    <footer class="footer text-center footer-top-color">
+      <div class="container">
+          <div class="row ">
+              <!-- Footer Location-->
+              <div class="col-lg-4 mb-5 mb-lg-0 mt-4">
+                  <h4 class="text-uppercase mb-4">Location</h4>
+                  <p class="lead mb-0">
+                      2215 John Daniel Drive
+                      <br>
+                      Clark, MO 65243
+                  </p>
               </div>
-              <div class="col-12 col-md-4 ">
-                <h3>AROUND THE WEB</h3>
-                <ul class="list-unstyled d-flex justify-content-center">
-                  <li><i class="fa-brands fa-facebook"></i></li>
-                  <li><i class="fa-brands fa-google-plus-g ms-2"></i></li>
-                  <li><i class="fa-brands fa-twitter ms-2"></i></li>
-                  <li><i class="fa-brands fa-linkedin ms-2"></i></li>
-
-                </ul>
+              <!-- Footer Social Icons-->
+              <div class="col-lg-4 mb-5 mb-lg-0 position-relative mt-4">
+                  <h4 class="text-uppercase mb-4">Around the Web</h4>
+                  <i class="fa-brands fa-facebook fa-xl ms-3 "></i>
+                  <i class="fa-brands fa-google-plus-g fa-xl ms-3"></i>
+                  <i class="fa-brands fa-twitter fa-xl ms-3"></i>
+                  <i class="fa-brands fa-linkedin fa-xl ms-3"></i>
               </div>
-              <div class="col-12 col-md-4">
-                <h3>ABOUT FREELANCER</h3>
-                <p>Freelance is free to use, open source Bootstrap theme created by</p>
-                <p><a href="#">Start Bootstrap</a></p>
+              <!-- Footer About Text-->
+              <div class="col-lg-4">
+                  <h4 class="text-uppercase mb-4 mt-4">About Freelancer</h4>
+                  <p class="lead mb-0">
+                      Freelance is a free to use, MIT licensed Bootstrap theme created by
+                      <a href="#">Start Bootstrap</a>
+                      .
+                  </p>
               </div>
-            </div>
           </div>
-       </section>
-    <!-- FOOTER-TOP-END -->
+      </div>
+    <!-- FOOTER-TOP-END-->
 
-
-    </footer>
+  </footer>
     <!-- FINE FOOTER -->
     
 
